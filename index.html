@@ -7,19 +7,36 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-gray-50 text-gray-900">
+<body class="bg-white text-gray-900">
 
-  <main class="max-w-5xl mx-auto px-6 py-24">
-    <h1 class="text-5xl font-bold mb-6">FJAP Industries</h1>
+  <!-- Header -->
+  <header class="border-b border-gray-200">
+    <div class="max-w-6xl mx-auto px-6 py-6 flex justify-between items-center">
+      <span class="text-xl font-semibold">FJAP Industries</span>
+      <nav class="space-x-6 text-gray-600">
+        <a href="#apps" class="hover:text-black">Apps</a>
+        <a href="privacy.html" class="hover:text-black">Privacy</a>
+        <a href="mailto:contact@fjapindustries.com" class="hover:text-black">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-    <p class="text-xl text-gray-600 mb-10">
-      Independent software development studio creating simple, high-quality iOS applications.
+  <!-- Hero -->
+  <section class="max-w-6xl mx-auto px-6 py-28">
+    <h1 class="text-6xl font-bold tracking-tight mb-6">
+      Thoughtful iOS apps,<br class="hidden sm:block" />
+      built independently.
+    </h1>
+
+    <p class="text-xl text-gray-600 max-w-2xl mb-10">
+      FJAP Industries is an independent app studio focused on clean design,
+      performance, and useful software.
     </p>
 
-    <div class="flex flex-wrap gap-4">
+    <div class="flex gap-4">
       <a href="#apps"
          class="px-6 py-3 rounded-xl bg-black text-white hover:bg-gray-800 transition">
-        Our Apps
+        View Apps
       </a>
 
       <a href="privacy.html"
@@ -27,21 +44,35 @@
         Privacy Policy
       </a>
     </div>
-  </main>
-
-  <section id="apps" class="max-w-5xl mx-auto px-6 py-12">
-    <h2 class="text-3xl font-semibold mb-4">Apps</h2>
-    <p class="text-gray-600">
-      Apps currently in development. App Store links will appear here when available.
-    </p>
   </section>
 
-  <footer class="text-center text-gray-500 py-12">
-    Contact:
-    <a href="mailto:contact@fjapindustries.com" class="underline">
-      contact@fjapindustries.com
-    </a>
-  </footer>
+  <!-- Apps -->
+  <section id="apps" class="bg-gray-50 border-t border-gray-200">
+    <div class="max-w-6xl mx-auto px-6 py-20">
+      <h2 class="text-4xl font-semibold mb-10">Apps</h2>
 
-</body>
-</html>
+      <div class="grid md:grid-cols-2 gap-8">
+
+        <!-- App Card -->
+        <div class="bg-white rounded-2xl border border-gray-200 p-8">
+          <h3 class="text-2xl font-semibold mb-2">App Name</h3>
+          <p class="text-gray-600 mb-4">
+            A short description of what this app does and why it’s useful.
+          </p>
+          <span class="inline-block text-sm text-gray-500">
+            Coming soon to the App Store
+          </span>
+        </div>
+
+        <!-- Placeholder -->
+        <div class="bg-white rounded-2xl border border-dashed border-gray-300 p-8 flex items-center justify-center text-gray-400">
+          More apps in development
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-gray-200">
+    <div class="max-w-6xl mx-auto px-6 py-1
