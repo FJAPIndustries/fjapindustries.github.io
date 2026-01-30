@@ -239,3 +239,14 @@
 
 </body>
 </html>
+
+<script>
+  const hash = window.location.hash.substring(1); // get part after #
+  if (hash) {
+    const el = document.getElementById(hash);
+    if (el && el.tagName === "DETAILS") {
+      el.open = true; // open it automatically
+      el.scrollIntoView({ behavior: "smooth" }); // scroll to it
+    }
+  }
+</script>
